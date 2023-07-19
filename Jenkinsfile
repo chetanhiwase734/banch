@@ -14,8 +14,7 @@ pipeline {
 					
 							steps {
 							
-								sh "docker stop 23Q2"
-								sh "docker system prune -a -f"
+								
 								sh "docker run -itdp 90:80 --name 23Q3 httpd"
 								sh "git checkout 23Q2"
 								sh "git checkout 23Q2"

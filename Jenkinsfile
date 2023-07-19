@@ -12,7 +12,7 @@ pipeline {
 			
 					stage ("23Q3"){
 					
-							steps {
+						steps {
 							
 								sh "docker stop 23Q3"
 								sh "docker system prune -a -f"

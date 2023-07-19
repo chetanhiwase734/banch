@@ -10,9 +10,10 @@ pipeline {
 
 			stages {
 			
-					stage ("deploy-branch-23Q1"){
+					stage ("23Q1"){
 					
 							steps {
+							
 								sh "docker stop 23Q1"
 								sh "docker system prune -a -f"
 								sh "docker run -itdp 80:80 --name 23Q1 httpd"

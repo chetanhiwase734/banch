@@ -8,7 +8,7 @@ pipeline {
 				 }
 			}
 
-			stages {
+			stages { 
 			
 					stage ("23Q2"){
 					

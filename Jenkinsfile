@@ -15,7 +15,7 @@ pipeline {
 						steps {
 							
 								sh "cd /mnt/branch/branch"
-								sh "docker stop 23Q2"
+								
 								sh "docker system prune -a -f"
 								sh "git checkout 23Q2"
 								sh "docker run -itdp 90:80 --name 23Q1 httpd"

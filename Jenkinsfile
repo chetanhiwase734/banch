@@ -2,7 +2,7 @@ pipeline {
 			agent {
 					label{
 					 
-					label "slave-1"
+					label "built-in"
 				
 					
 				}
@@ -13,7 +13,7 @@ pipeline {
 					stage ("23Q1"){
 					
 							steps {
-								sh "cd /mnt/branch/branch/"
+								sh "cd /mnt/branch/branch"
 								sh "docker stop 23Q1"
 								sh "docker system prune -a -f"
 								sh "git checkout 23Q1"

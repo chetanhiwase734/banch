@@ -2,7 +2,7 @@ pipeline {
 			agent {
 					label{
 					
-					label "built-in"
+					label "qa"
 				
 					
 				}
@@ -48,8 +48,7 @@ pipeline {
 							steps {
 							
 								sh "cd /mnt/branch/branch"
-								sh "docker stop 23Q3"
-								sh "docker system prune -a -f"
+								
 								sh "git checkout 23Q3"
 								sh "docker run -itdp 100:80 --name 23Q3 httpd"
 								sh "docker cp index.html 23Q3:/usr/local/apache2/htdocs"

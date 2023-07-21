@@ -21,7 +21,7 @@ pipeline {
 								sh "docker cp index.html 23Q1:/usr/local/apache2/htdocs"
 								sh "docker exec 23Q1 chmod -R 777 /usr/local/apache2/htdocs/index.html"
 					}
-			}
+			} 
 		
 					stage ("23Q2"){
 					
